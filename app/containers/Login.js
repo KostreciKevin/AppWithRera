@@ -52,7 +52,7 @@ Alert.alert('User Logged in!',
 
         <Button style={styles.textComponent}
         onPress={() => this._createOnpress(this.state.username, this.state.password) }
-        title="Login"
+        title="Login Now"
         color="#841584"
         accessibilityLabel="create project button"
         />
