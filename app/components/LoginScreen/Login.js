@@ -10,7 +10,7 @@ import {
   Image
 } from 'react-native';
 
-const broccoliIcon = require("../../img/broccoli.png")
+const broccoliIcon = require("../../../img/icons/broccoli.png")
 
 export default class Login extends React.Component {
 constructor(props) {
@@ -41,6 +41,7 @@ Alert.alert('User Logged in!',
       <TextInput
         underlineColorAndroid='transparent'
         style={styles.textInput}
+        onChangeText={(username) => this.setState({username})}
         />
         <Text style={styles.textComponent}>
           Password
@@ -48,6 +49,7 @@ Alert.alert('User Logged in!',
         <TextInput
           underlineColorAndroid='transparent'
           style={styles.textInput}
+          onChangeText={(password) => this.setState({password})}
           />
 
         <Button style={styles.textComponent}
